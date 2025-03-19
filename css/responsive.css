@@ -1,11 +1,24 @@
-@media (max-width:1500px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@media (max-width:1023px) {
+  body > section:first-of-type{
+    padding-top: 100px;
+  }
 
 }
 
-@media (max-width:1000px) {
-
-}
-
-@media (max-width:500px) {
+@media screen and (min-width: 767px) {
+  .portfolio-list{
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
 
 }
