@@ -1,24 +1,51 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Responsive Styles */
 
-
-@media (max-width:1023px) {
-  body > section:first-of-type{
-    padding-top: 100px;
+/* Tablet Styles (768px and above) */
+@media (max-width: 1024px) {
+  .content {
+    padding: 0 20px;
   }
-
+  .portfolio-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio-item {
+    width: 45%;
+  }
+  .teammates-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .teammate {
+    min-width: 45%;
+  }
 }
 
-@media screen and (min-width: 767px) {
-  .portfolio-list{
-    border: 5px solid red;
-    display: flex;
+/* Mobile Styles (Up to 767px) */
+@media (max-width: 767px) {
+  .content h1 {
+    font-size: 48px;
+  }
+  .content h2 {
+    font-size: 28px;
+  }
+  .portfolio-list {
     flex-direction: column;
-    gap: 30px;
+  }
+  .portfolio-item {
+    width: 100%;
+  }
+  .teammates-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teammate {
+    min-width: 100%;
     text-align: center;
   }
-
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
