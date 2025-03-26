@@ -1,24 +1,53 @@
 /* Responsive Styles */
+.trigram {
+  display: none;
+}
 
 /* Tablet Styles (768px and above) */
-@media (max-width: 1024px) {
-  .content {
-    padding: 0 20px;
+@media (max-width: 1023px) {
+  .trigram {
+    display: block;
   }
+  .top-navigation ul{
+    display: none;
+  }
+
   .portfolio-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .portfolio-item {
-    width: 45%;
-  }
-  .teammates-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .teammate {
-    min-width: 45%;
-  }
+  flex-direction: column; 
+}
+
+.portfolio-item {
+  flex-direction: row;
+}
+
+.teammates-list-wrapper {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.teammates-list:before,
+.teammates-list:after {
+  display: none;
+}
+
+.teammate {
+width: 45%;
+margin: auto;
+}
+
+.teammate-img-wrapper {
+  width: 100%;
+}
+
+.teammate-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+}
+
+
 }
 
 /* Mobile Styles (Up to 767px) */
