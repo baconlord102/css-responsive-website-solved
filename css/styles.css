@@ -284,6 +284,7 @@ body {
 .teammate-social-icons {
   display: flex;
   gap: 6px;
+  
 }
 
 .teammate-social-icons > div {
@@ -389,3 +390,4 @@ footer .social-icons .icon {
   border-top: 1px solid #2e2e2e;
   padding-top: 30px;
 }
+
