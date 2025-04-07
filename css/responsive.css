@@ -3,14 +3,19 @@
   display: none;
 }
 
-
-
 /* Mobile Styles (Up to 767px) */
 @media only screen and (max-width: 767px){
+  .trigram {
+    display: block;
+  }
+
+  .top-navigation ul {
+    display: none;
+  }
+
   .content h1 {
     font-size: 48px;
   }
-
 
   .content h2 {
     font-size: 28px;
@@ -18,7 +23,11 @@
 
   .portfolio-list {
     flex-direction: column;
+  }
 
+  .teammate-content .subtext {
+    color: #969696;
+    width: 300px;
   }
 
   .portfolio-item {
@@ -71,7 +80,10 @@
     text-align: center;
   }
 
-  
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Tablet Styles (768px and above) */
@@ -91,6 +103,7 @@
   .portfolio-item {
     flex-direction: row;
   }
+  
 
   .teammates-list-wrapper {
     display: flex;
@@ -127,6 +140,10 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+
+  .social-icons {
+    width: 70px;
   }
 
 
