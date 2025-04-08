@@ -1,7 +1,7 @@
-/* Responsive Styles */
 .trigram {
   display: none;
 }
+
 
 /* Mobile Styles (Up to 767px) */
 @media only screen and (max-width: 767px){
@@ -51,6 +51,11 @@
   .teammates-list:before,
   .teammates-list:after {
     display: none;
+  }
+
+  .content p.subtext {
+    padding: 0;
+    width: 100%;
   }
 
   .teammate {
@@ -103,12 +108,16 @@
   .portfolio-item {
     flex-direction: row;
   }
+
+  .social-icons span{
+    display: none;
+  }
   
 
   .teammates-list-wrapper {
     display: flex;
     width: 100%;
-    overflow: hidden;
+    
     gap: 30px;
     flex-wrap: wrap;
   }
@@ -149,14 +158,19 @@
 
 }
 
-@media only screen and (min-width: 1300px){
+@media only screen and (min-width: 768px)and (max-width: 1300px){
   .teammate-social-icons div:hover{
-    cursor: pointer !important;
+    cursor: pointer ;
     background-color: darkgrey;
   }
 
-  footer .social-icons div:hover{
+  .header-content a:hover {
     cursor: pointer;
-    background-color: white;
+    color: black;
+  }
+
+ .social-icons div:hover{
+    cursor: pointer;
+    color: white;
   }
 }
